@@ -1,0 +1,46 @@
+<style>
+    .rect2{
+top: 400px;
+position: relative;
+    }
+    .rect3{
+top: -300px;
+position: relative;
+    }
+    .rect4{
+top: 500px;
+position: relative;
+    }
+</style>
+<img src="stick_man1.png" class="rect2">
+<img src="stick_man1.png" class="rect2">
+<img src="stick_man2.png" class="rect2" onclick="code();" id="a">
+<img src="stick_man.png" class="rect2">
+<img src="stick_man1.png" class="rect2">
+<img src="stick_man1.png" class="rect2">
+<img src="arrow2.png" class="rect3" onclick="location.href='two.html'">
+<img src="light.png" class="rect4" onclick="alert('활성화와 비활성화 그것들은  0과 1이다.');">
+<script>
+    var a = 0;
+    function code() {
+a++
+if(a==2) {
+    alert(".")
+}
+if(a==6) {
+    alert("..")
+}
+if(a==10) {
+    if(confirm(".?! 망치가 발견됬다! 망치를 사용할까?")==true) {
+alert("쾅! 망치가 깨지며 조각이 부셔졌다");
+document.getElementById("a").src="stick_man3.png";
+document.getElementById("a").setAttribute("onclick", "code2();")
+    }
+}
+    }
+    function code2() {
+        if(confirm("뚜껑을 열고 들어가겠습니까?")==true) {
+            location.href="ending2.html";
+        }
+    }
+</script>

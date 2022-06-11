@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .rect3{
+  top: -230px;
+  position: relative;
+        }
+        .rect2{
+  top: 120px;
+  left: -50px;
+  position: relative;
+        }
+        .rect1{
+  top: 200px;
+  left: 2000px;
+  position: relative;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <img src="door.png" onclick="code();">
+</img>
+<img class="rect3" src="glass.png" onclick="alert('잠겨있다.')">
+<img class="rect3" src="glass.png" onclick="alert('잠겨있다.')">
+<img class="rect3" src="glass2.png" id="glass2" onclick="code2();">
+<img class="rect3" src="glass.png" onclick="alert('잠겨있다.')">
+<img class="rect2" src="table.png" onclick="code3();">
+</head>
+    <script>
+var a = 0;
+var e = 0;
+function code() {
+    let Password = prompt('[자물쇠] 비밀번호를 적으시오');
+    if(Password=="3151") {
+        alert('철컥 (열렸다)');
+     location.href="two.html";
+    }else{
+        alert('(열리지 않았다.)')
+    }
+}
+function code2() {
+    if(a==0) {
+    document.getElementById("glass2").src = "glass3.png";
+    a++
+}else{
+    document.getElementById("glass2").src = "glass2.png";
+    a = 0
+}
+}
+function code3() {
+    if(e==1) {
+        alert('ㅂ 10110000 10011000')
+        e++
+    }else{
+        if(e==2) {
+            alert('바 10011000')
+            e++
+        }else{
+            if(e > 2) {
+                alert('반')
+            }else{
+    e++
+    alert('11101011 10110000 10011000');
+}}}}
+    </script>
+</body>
+</html>

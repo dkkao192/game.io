@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .rect2{
+  left:1800px;
+  top:-400px;
+  position: relative;
+        }
+        .rect1{
+  left:600px;
+  top:300px;
+  position: relative;
+        }
+        .rect{
+  left:-300px;
+  position: relative;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="rect2" src="arrow.png" onclick="location.href='two1.html';">
+    <img src="box.png" onclick="code();" class="rect1">
+    <img src="stair.png" class="rect" onclick="location.href='three.html';">
+</body>
+</html>
+<script>
+    function code() {
+        let one = prompt("[자물쇠] 비밀번호를 적으시오");
+        if(one=="001100") {
+            alert("[포스트잇] 삶과 우주 그리고 모든것에 대한 해답.")
+        }else{
+            alert('비밀번호가 틀렸습니다.')
+        }
+    }
+</script>

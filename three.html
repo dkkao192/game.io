@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .rect3{
+  top: -230px;
+  position: relative;
+        }
+        .rect2{
+  top: 120px;
+  left: -50px;
+  position: relative;
+        }
+        .rect1{
+  top: 200px;
+  left: 2000px;
+  position: relative;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <img src="door2.png" onclick="code2();">
+</img>
+<img class="rect3" src="glass.png">
+<img class="rect3" src="glass.png">
+<img class="rect3" src="glass4.png">
+<img class="rect3" src="glass.png">
+<img class="rect2" src="table2.png" onclick="code();" id="e">
+</head>
+    <script>
+        var a = 0;
+var e = 0;
+var mp;
+        function code() {
+            let e = prompt("[핸드폰] 비밀번호를 입력하시오");
+            if(e=="42") {
+                mp = true
+                alert("[핸드폰] 로딩중..")
+                alert("[핸드폰] 성이름님 다시 와주셔서 감사합니다!")
+                document.getElementById("e").src="table3.png"
+            }else{
+                if(e==null) {
+
+                }else{
+                alert("[핸드폰] 비밀번호가 틀렸습니다.")
+            }
+        }
+    }
+function code2() {
+    if(confirm('[포스트잇] 포스트잇을 확인하시겠습니까?')== true) {
+        alert('[Πώς να ξεφύγετε] Εισαγάγετε τον κωδικό πρόσβασης 1128 μετά τη χρήση του κλειδιού');
+        if(mp==true) {
+            if(confirm("마침 핸드폰에 번역기가 있습니다. 사용하시겠습니까?")==true) {
+                alert("[탈출 방법] 열쇠 사용 후 비밀번호 1128 입력")
+            }
+        }
+    }else{
+        if(confirm('[문] 문을 여시겠습니까?')== true) {
+            if(prompt("[문] 비밀번호를 입력하세요.")== "1023") {
+                alert("[문] 문이 열렸습니다...!")
+                location.href="ending.html";
+            }else{
+                alert("[경보기] 삐용삐용!!")
+                location.href="ending3.html";
+            }
+        }
+    }
+}
+    </script>
+</body>
+</html>
